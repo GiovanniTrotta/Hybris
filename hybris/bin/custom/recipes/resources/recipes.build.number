@@ -1,0 +1,8 @@
+#Ant properties
+#Mon Dec 12 09:56:02 CET 2016
+builddate=20161212 0955
+description=recipes
+name=recipes
+vendor=hybris
+version=5.4.0.13
+version.api=5.4.0

@@ -1,0 +1,55 @@
+INSERT Food; idFood; description
+;food1;carrot
+;food2;peas
+;food3;rocket
+;food3;cheddar
+;food4;hamburger
+;food5;sausage
+;food6;lettuce
+;food7;onion
+;food8;pepper
+;food9;chicken
+;food10;eggs
+;food11;tomato
+;food12;beans
+;food13;lettuce
+;food14;mozzarella
+;food15;bacon
+
+INSERT Recipe; idRecipe; name
+;recipe1;casablanca
+;recipe2;madrid
+;recipe3;roma
+;recipe4;Ancona
+;recipe5;milano
+;recipe6;torino
+;recipe7;benevento
+;recipe8;bari
+;recipe9;genova
+;recipe10;bari
+
+INSERT Recipe2Food; Recipe; groups(idFood) [mode=replace]
+;recipe1; food1,food3,food12,food13
+;recipe2; food5,food8,food10,food15
+;recipe3; food1,food3,food10,food14
+;recipe4; food2,food5,food7,food11
+;recipe5; food5,food7,food11,food15
+;recipe6; food2,food4,food6,food8
+;recipe7; food3,food5,food7,food9
+;recipe8; food4,food6,food11,food14
+;recipe9; food1,food8,food9,food12
+;recipe10; food4,food6,food7,food15
+
+;recipe10;bari
+
+INSERT Recipe2Food; Recipe; groups(idFood) [mode=replace]
+;recipe1; food1,food3,food12,food13
+;recipe2; food5,food8,food10,food15
+;recipe3; food1,food3,food10,food14
+;recipe4; food2,food5,food7,food11
+;recipe5; food5,food7,food11,food15
+;recipe6; food2,food4,food6,food8
+;recipe7; food3,food5,food7,food9
+;recipe8; food4,food6,food11,food14
+;recipe9; food1,food8,food9,food12
+;recipe10; food4,food6,food7,food15

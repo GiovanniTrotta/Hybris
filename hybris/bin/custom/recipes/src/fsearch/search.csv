@@ -1,0 +1,5 @@
+SELECT * FROM Food
+SELECT * FROM Recipes
+SELECT {idFood} FROM Food WHERE {name} LIKE 's%'
+SELECT {idRecipes} FROM Food WHERE {descrption} LIKE '%s%'
+SELECT {description} FROM Food WHERE {descrption} LIKE '%a'
