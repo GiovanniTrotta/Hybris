@@ -22,7 +22,8 @@
       <coremodule generated="true" manager="de.hybris.platform.cuppytrailhmc.jalo.CuppytrailhmcManager" packageroot="de.hybris.platform.cuppytrailhmc"/>
 
       <webmodule jspcompile="false" webroot="/cuppytrailhmc"/>
-					
+				
+      <hmcmodule extensionclassname="de.hybris.platform.cuppytrail.hmc.CuppytrailHMCExtension"/>	
 	
 
    </extension>

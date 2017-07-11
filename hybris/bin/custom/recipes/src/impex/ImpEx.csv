@@ -1,55 +1,40 @@
-INSERT Food; idFood; description
-;food1;carrot
-;food2;peas
-;food3;rocket
-;food3;cheddar
-;food4;hamburger
-;food5;sausage
-;food6;lettuce
-;food7;onion
-;food8;pepper
-;food9;chicken
-;food10;eggs
-;food11;tomato
-;food12;beans
-;food13;lettuce
-;food14;mozzarella
-;food15;bacon
+INSERT Food; code; name
+;1;carrot
+;2;peas
+;3;rocket
+;3;cheddar
+;4;hamburger
+;5;sausage
+;6;lettuce
+;7;onion
+;8;pepper
+;9;chicken
+;10;eggs
 
-INSERT Recipe; idRecipe; name
-;recipe1;casablanca
-;recipe2;madrid
-;recipe3;roma
-;recipe4;Ancona
-;recipe5;milano
-;recipe6;torino
-;recipe7;benevento
-;recipe8;bari
-;recipe9;genova
-;recipe10;bari
+INSERT Recipe; codeRecipe; nameRecipe; recipeType; servings
+;1; Matriciana; first plate; 2
+;2; Salad; second dish; 3
+;3; Pasta with tomato; 4
+;4; Meat; second dish; 2
+;5; Sausage; second dish; 2
+;r6; Roast; sneak; 3
+;7; Chicken; second dish; 3
+;8; Toast; sneak; 1
 
-INSERT Recipe2Food; Recipe; groups(idFood) [mode=replace]
-;recipe1; food1,food3,food12,food13
-;recipe2; food5,food8,food10,food15
-;recipe3; food1,food3,food10,food14
-;recipe4; food2,food5,food7,food11
-;recipe5; food5,food7,food11,food15
-;recipe6; food2,food4,food6,food8
-;recipe7; food3,food5,food7,food9
-;recipe8; food4,food6,food11,food14
-;recipe9; food1,food8,food9,food12
-;recipe10; food4,food6,food7,food15
 
-;recipe10;bari
 
-INSERT Recipe2Food; Recipe; groups(idFood) [mode=replace]
-;recipe1; food1,food3,food12,food13
-;recipe2; food5,food8,food10,food15
-;recipe3; food1,food3,food10,food14
-;recipe4; food2,food5,food7,food11
-;recipe5; food5,food7,food11,food15
-;recipe6; food2,food4,food6,food8
-;recipe7; food3,food5,food7,food9
-;recipe8; food4,food6,food11,food14
-;recipe9; food1,food8,food9,food12
-;recipe10; food4,food6,food7,food15
+
+INSERT RecipeEntry; entryNumber; displayName; food(code)
+;recipe1; 1,name3, 5
+;recipe2; 5,name8,6
+;recipe3; 2,name3,7
+;recipe4; 3,name5,8
+;recipe5; 4,name7,9
+;recipe6; 6, name4,10
+;recipe7; 7,name5,9
+;recipe8; 8,name6,11
+;recipe9; 9,name8,12
+;recipe10; 11,name6,13
+
+
+
